@@ -34,3 +34,4 @@ jobs:
             sudo chmod -R 775 /var/www/cashflow-backend/storage /var/www/cashflow-backend/bootstrap/cache
             sudo systemctl reload nginx
             sudo systemctl reload php8.4-fpm
+
