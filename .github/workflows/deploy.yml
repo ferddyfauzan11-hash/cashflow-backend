@@ -31,6 +31,7 @@ jobs:
             php artisan route:cache
             php artisan view:cache
             sudo chown -R rancangsistem:rancangsistem /var/www/cashflow-backend
+            sudo chown -R rancangsistem:www-data /var/www/cashflow-backend/storage /var/www/cashflow-backend/bootstrap/cache
             sudo chmod -R 775 /var/www/cashflow-backend/storage /var/www/cashflow-backend/bootstrap/cache
             sudo systemctl reload nginx
             sudo systemctl reload php8.4-fpm
